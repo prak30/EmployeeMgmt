@@ -5,7 +5,7 @@ body{
 :root {
   --btn: #dbdbdb;
   --btn-hover: #cacaca;
-  --item-bg: #fofofo;
+  --item-bg: #f0f0f0;
   --modal-bg: rgba(141,141,141,0.541)
 }
 .header{
@@ -48,4 +48,19 @@ body{
   border-bottom: 1px solid black;
   margin-bottom: 5px;
   padding-bottom: 10px;
+}
+.employees__names--list{
+  display: flex;
+  flex-direction: column;
+}
+.employees__names--item{
+  cursor: pointer;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  text-align: center;
+  background-color: var(--item-bg);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
