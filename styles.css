@@ -1,0 +1,24 @@
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding : 0 10px
+}
+:root {
+  --btn: #dbdbdb;
+  --btn-hover: #cacaca;
+  --item-bg: #fofofo;
+  --modal-bg: rgba(141,141,141,0.541)
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.header > button {
+  padding: 5px 10px;
+  background-color: var(--btn);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
