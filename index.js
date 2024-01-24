@@ -1,10 +1,14 @@
-import data from "./data.json" assert { type: "json" };
-// console.log(data);
+fetch("./data.json")
+  .then((response) => response.json())
+  .then((data) => {
+    // console.log(data);
+    const list = document.getElementById("yo");
 
-const list = document.getElementById("yo");
-data.map((element) => {
-  console.log(element);
-  const listItem = document.createElement("li");
-  listItem.innerHTML = `${element.firstName} ${element.lastName}`;
-  list.appendChild(listItem);
-});
+    data.map((element) => {
+      console.log(element);
+      const li = document.createElement("li");
+      li.innerHTML = `${element.firstName} ${element.lastName}`;
+      list.appendChild(li);
+    });
+  })
+  .catch((error) => console.error("Error loading JSON file", error));
