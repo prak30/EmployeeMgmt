@@ -22,3 +22,30 @@ body{
   cursor: pointer;
   border-radius: 20px;
 }
+
+.employees{
+  display: flex;
+}
+
+.employees >div{
+  border: 1px solid black;
+  overflow-y: scroll;
+  height: 450px;
+}
+.employees__names{
+  width: 30%;
+}
+.employees__single{
+  width: 70%;
+}
+.employees__names,.employees__single{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.employees__names--title, .employees__single--title{
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
