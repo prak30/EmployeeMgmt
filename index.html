@@ -10,7 +10,7 @@
     <div class="app">
       <header class="header">
         <h1>Employee Database Management</h1>
-        <button>Add Employee</button>
+        <button class="createEmployee">Add Employee</button>
       </header>
     </div>
 
@@ -24,6 +24,39 @@
         <span class="employees__single--title"> Employees Information </span>
         <div class="employees__single--info"></div>
       </div>
+    </div>
+
+    <div class="addEmployee">
+      <form class="addEmployee_create">
+        Add a new employee
+        <div>
+          <input
+            type="text"
+            name="firstName"
+            placeholder="FirstName"
+            required
+          />
+          <input type="text" name="lastName" placeholder="LastName" required />
+        </div>
+        <input type="text" name="imageUrl" placeholder="ImageURL(optional)" />
+        <input type="email" name="email" placeholder="Email" required />
+        <input
+          type="number"
+          name="contactNumber"
+          placeholder="Contact"
+          required
+        />
+        <input type="number" name="salary" placeholder="Salary" required />
+        <input type="text" name="address" placeholder="Address" required />
+        <input
+          type="date"
+          name="dob"
+          placeholder="Data Of Birth"
+          class="addEmployee_create-dob"
+          required
+        />
+        <input type="submit" value="submit" class="addEmployee_create-submit" />
+      </form>
     </div>
 
     <script src="index.js"></script>
